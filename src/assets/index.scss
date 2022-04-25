@@ -1,0 +1,41 @@
+$primary: #572734;
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  font-size: 16px;
+  * {
+    // padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 8px solid $primary;
+  strong {
+    font-size: 36px;
+  }
+  span {
+    font-size: 28px;
+  }
+}
+
+.vq-profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  & > span {
+    margin-right: 50px;
+    margin-top: 5px;
+    .icon {
+      margin-right: 5px;
+    }
+  }
+}
